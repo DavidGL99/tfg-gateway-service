@@ -1,0 +1,11 @@
+version: '3'
+services:
+  gateway-service:
+    build: ./
+    ports:
+      - "80:80"
+    environment:
+      - CONFIG_HOST=##
+      - EUREKA_HOST=##
+
+
